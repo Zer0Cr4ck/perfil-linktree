@@ -19,7 +19,7 @@ body{
 }
 
 .container{
-    border: 1px solid red;
+    
     max-width: 580px;
     margin: auto;
     color: white;
@@ -46,44 +46,44 @@ body{
 section{
     margin-top: 30px;
     margin-bottom: 30px;
-}
-section ul{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
-section ul li {
-    list-style: none;
+
+section a{
     background-color: rgb(201 76 68);
     min-height: 64px;
-    border-radius: 8px;
     border: 2px solid rgb(255, 255, 255);
-    box-shadow: rgb(255, 255, 255) 8px 8px 0px 0px;
-    display: flex;
+    box-shadow: rgb(255, 255, 255) 8px 8px 0px 0px; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    text-align: center;
-
-}
-
-section ul li a{
+    display: flex;
     color: white;
     text-decoration: none;
-    position: absolute;
-    inset: 0;
-    text-align: center;
-    
-    
-    
+
 }
+
+section a:hover{
+    transform: translate(5px, 4px);
+    box-shadow: 8px 8px 0px 0px;
+}
+
+
+
 .iconos{
     display: flex;
     gap: 15px;
-  
     justify-content: center;
 }
 .iconos a img{
     width: 32px;
     height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.iconos a img:hover{
+    transform: scale(1.2);
 }
